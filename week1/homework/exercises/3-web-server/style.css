@@ -1,0 +1,8 @@
+body{
+    background-color: #333;
+    color: white;
+}
+#content { 
+    color: blue;
+    font-size: 3rem;
+}

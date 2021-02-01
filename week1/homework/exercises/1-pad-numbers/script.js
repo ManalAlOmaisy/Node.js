@@ -15,7 +15,12 @@
  * Tips:
  *   where to use `exports` and where `require`?
  */
+const padleft = require('./padLeft');
 
 let numbers = [ "12", "846", "2", "1236" ];
+
+numbers.forEach(num => {
+    console.log(padleft(num, 5, ' ')) ;
+ })
 
 // YOUR CODE GOES HERE

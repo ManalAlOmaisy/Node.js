@@ -7,7 +7,12 @@
  * Pad the numbers to 8 characters to confirm that it works correctly
  *
  */
+const padleft = require('left-pad');
 
 let numbers = [ "12", "846", "2", "1236" ];
+
+numbers.forEach(num => {
+    console.log(padleft(num, 8, ' ')) ;
+ })
 
 // YOUR CODE GOES HERE
