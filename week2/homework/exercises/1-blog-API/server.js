@@ -33,7 +33,7 @@ app.put('/blogs/:title', (req,res) => {
   if(fs.existsSync(path.join(__dirname,'/blogs',`${newBlog.title}.json`))){
     fs.writeFileSync(path.join(__dirname, '/blogs', `${newBlog.title}.json`), JSON.stringify(newBlog));
     res.setHeader('Content-Type', 'application/json');
-    res.status(400)
+    res.status(200)
     res.end("Ok, Updated")
   }
   else{
