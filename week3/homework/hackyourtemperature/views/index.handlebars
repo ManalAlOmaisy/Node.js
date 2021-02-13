@@ -1,0 +1,22 @@
+<div class="container">
+    <form action ="/" method="POST">
+        <input type ="text" name="cityName" placeholder="Enter City Name" class="inputdata">
+        <button class="btn" type="submit">Send</button>
+    </form>
+
+    {{#if weatherData}}
+    <div class ="main-location">
+        <div class ="location">
+            <h1 class="weather-text">{{weatherText}}</h1>
+            <h2 class ="weather-degree">{{weatherdegree}}</h2>
+            <p class= "weather-description">{{weatherDesc}}</p>
+        </div> 
+        <figure>
+            <img src="http://openweathermap.org/img/w/{{weatherIcon}}.png" alt="Icon">
+        </figure>
+    {{else}}
+         <h2 class="weather-err">{{weatherText}}</h2>
+    </div>
+    {{/if}} 
+</div>  
+ 
